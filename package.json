@@ -1,0 +1,19 @@
+{
+  "name": "Automation-Test-with-WebdriverIO-Javascript",
+  "version": "1.0.0",
+  "description": "WebdriverIO is a test automation framework that allows you to run tests based on the Webdriver protocol and Appium automation technology. It provides support for your favorite BDD/TDD test framework and will run your tests locally or in the cloud using Sauce Labs, BrowserStack or TestingBot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/local-runner": "^5.10.10",
+    "webdriverio": "^5.10.10"
+  },
+  "devDependencies": {
+    "@wdio/mocha-framework": "^5.10.10"
+  }
+}
