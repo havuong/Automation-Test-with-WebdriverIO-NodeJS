@@ -4,13 +4,17 @@
   "description": "WebdriverIO is a test automation framework that allows you to run tests based on the Webdriver protocol and Appium automation technology. It provides support for your favorite BDD/TDD test framework and will run your tests locally or in the cloud using Sauce Labs, BrowserStack or TestingBot.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@wdio/cli": "^5.11.2",
+    "@wdio/junit-reporter": "^5.11.0",
     "@wdio/local-runner": "^5.10.10",
+    "node-sass": "^4.12.0",
+    "wdio-sync": "^0.7.3",
     "webdriverio": "^5.10.10"
   },
   "devDependencies": {

@@ -1,4 +1,12 @@
 exports.config = {
+    specs:[
+        "TC_Login.js"
+    ],
+    capabilities: [
+        {
+            browserName: "chrome"
+        }
+    ],
     runner: 'local',
 
     // Declare server info
@@ -9,6 +17,7 @@ exports.config = {
     // Test framework
     framework: 'mocha',
     mochaOpts: {
-        ui: 'bdd'
+        ui: 'bdd',
+        timeout: 600000
     }
 }
