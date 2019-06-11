@@ -1,6 +1,8 @@
 exports.config = {
-    specs:[
-        "TC_Login.js"
+
+    // Test Scripts
+    specs: [
+        "./src/setValue.js"
     ],
     capabilities: [
         {
@@ -14,10 +16,17 @@ exports.config = {
     port: 9515,
     path: '//',
 
-    // Test framework
+    // Test Framework
     framework: 'mocha',
     mochaOpts: {
         ui: 'bdd',
         timeout: 600000
-    }
+    },
+
+    // Reporter config
+    reporters: [
+        ['junit', {
+            outputDir: './reports'
+        }]
+    ]
 }
