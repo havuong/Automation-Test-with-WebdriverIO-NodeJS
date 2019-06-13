@@ -2,7 +2,7 @@ exports.config = {
 
     // Test Scripts
     specs: [
-        "./src/uploadFile.js"
+        "./src/handleMultipleTabs.js"
     ],
     capabilities: [
         {
