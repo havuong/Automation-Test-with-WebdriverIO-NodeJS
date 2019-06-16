@@ -1,12 +1,12 @@
 let path = require('path');
 
-describe('APi Learning', () => {
+describe('API Learning', () => {
 
     it('alert handle', () => {
         let pageUrl = 'http://the-internet.herokuapp.com/';
         let jsLinkText = '=JavaScript Alerts';
         let jsCOnfirmElementSelector = '[onclick="jsConfirm()"]';
-        
+
         browser.url(pageUrl);
 
         $(jsLinkText).waitForDisplayed(5000);
