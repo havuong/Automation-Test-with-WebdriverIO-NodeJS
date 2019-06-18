@@ -2,7 +2,7 @@ exports.config = {
 
     // Test Scripts
     specs: [
-        "./src/saveScreenshot.js"
+        "./src/waitForDisappeared.js"
     ],
     capabilities: [
         {
