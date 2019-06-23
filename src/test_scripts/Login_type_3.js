@@ -4,8 +4,8 @@ describe('PO type 3', () => {
 
     it('Login To the page', () => {
 
-        browser.url("http://the-internet.herokuapp.com/login");
-
+        LoginPage.openTestingPage('/login');
+        
         LoginPage
             .inputUsername('Hav')
             .inputPassword('123456')

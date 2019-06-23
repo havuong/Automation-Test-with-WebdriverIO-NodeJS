@@ -1,11 +1,13 @@
+let LoginBase = require('./LoginBase.js');
+
 const USER_NAME_TXTBX = '#username';
 const PASSWORD_TXTBX = '#password';
 const LOGIN_BTN = '[type="submit"]';
 
-class LoginPage {
+class LoginPage extends LoginBase{
 
     waitForUsernameDisplayed() {
-        $(USER_NAME_TXTBX).waitForDislayed(15000);
+        $(USER_NAME_TXTBX).waitForDisplayed(5000);
     }
 
     inputUsername(username) {
