@@ -2,7 +2,7 @@ exports.config = {
 
     // Test Scripts
     specs: [
-        "./src/test_scripts/Login_Type_3.js"
+        "./src/test_scripts/LoginFuntion.js"
     ],
     capabilities: [
         {
