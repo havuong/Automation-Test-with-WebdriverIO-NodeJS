@@ -1,3 +1,4 @@
+let chai = require("chai");
 exports.config = {
 
     // Test Scripts
@@ -29,5 +30,8 @@ exports.config = {
         ['junit', {
             outputDir: './reports'
         }]
-    ]
+    ],
+    before: () => {
+        global.expect = chai.expect;
+    }
 }
