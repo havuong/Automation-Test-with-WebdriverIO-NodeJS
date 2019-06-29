@@ -3,8 +3,11 @@ exports.config = {
 
     // Test Scripts
     specs: [
-        "./src/test_scripts/TC_001_Login.js"
+        "./src/test_scripts/TC_001_Login.js",
+        "./src/test_scripts/TC_002_Login_wrong_username.js",
+        "./src/test_scripts/TC_003_Login_wrong_password.js"
     ],
+    maxInstances: 2,
     capabilities: [
         {
             browserName: "chrome"
