@@ -14,8 +14,8 @@ exports.config = {
         ],
         login_function: [
             "./src/test_scripts/TC_001_Login.js",
-            "./src/test_scripts/TC_002_Login_wrong_username.js",
-            "./src/test_scripts/TC_003_Login_wrong_password.js" 
+            // "./src/test_scripts/TC_002_Login_wrong_username.js",
+            // "./src/test_scripts/TC_003_Login_wrong_password.js" 
         ]
     },
     maxInstances: 2,
@@ -45,7 +45,16 @@ exports.config = {
             outputDir: './reports'
         }]
     ],
+
     before: () => {
         global.expect = chai.expect;
+    },
+
+    afterTest: (test) => {
+        // Save a PNG File when the test failed
+        if(test.passed === false){
+            let fileName = test.fullTitle;
+            browser.saveScreenshot('./src/screenShots/' + fileName + '.png')
+        }
     }
 }
